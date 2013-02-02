@@ -22,31 +22,9 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/img\/startup\/startup.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/startup\/startup.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/startup\/startup.png",
-      "initialSize" : 58311,
-      "fileType" : 8192
-    },
-    "\/library\/img\/a-rss.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/a-rss.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/a-rss.png",
-      "initialSize" : 564,
-      "fileType" : 8192
-    },
     "\/library\/js\/plugins\/jquery.placeholder.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.placeholder.js",
@@ -67,16 +45,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/js\/plugins\/jquery.foundation.navigation.js" : {
+    "\/library\/img\/bump_white@2x.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/library\/img\/bump_white@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_white@2x.png",
+      "initialSize" : 1882,
+      "fileType" : 8192
     },
     "\/library\/js\/scripts.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -89,17 +67,6 @@
       "outputAbbreviatedPath" : "\/library\/js\/scripts.min.min.js",
       "fileType" : 64
     },
-    "\/library\/img\/176x176.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/176x176.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/176x176.png",
-      "initialSize" : 1391,
-      "fileType" : 8192
-    },
     "\/library\/scss\/_62em.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -111,17 +78,6 @@
       "outputAbbreviatedPath" : "\/library\/css\/_62em.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/library\/img\/410x230.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/410x230.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/410x230.png",
-      "initialSize" : 2104,
-      "fileType" : 8192
     },
     "\/library\/scss\/susy\/_functions.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -146,6 +102,17 @@
       "outputAbbreviatedPath" : "\/library\/css\/_margin.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/library\/img\/diagram.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/diagram.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/diagram.png",
+      "initialSize" : 32497,
+      "fileType" : 8192
     },
     "\/library\/scss\/_86em.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -203,27 +170,15 @@
       "outputAbbreviatedPath" : "\/library\/js\/plugins\/helper.min.js",
       "fileType" : 64
     },
-    "\/library\/scss\/_tables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_tables.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_tables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/img\/startup\/startup-tablet-portrait.png" : {
+    "\/library\/img\/worms.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-portrait.png",
+      "inputAbbreviatedPath" : "\/library\/img\/worms.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-portrait.png",
-      "initialSize" : 60515,
+      "outputAbbreviatedPath" : "\/library\/img\/worms.png",
+      "initialSize" : 20945,
       "fileType" : 8192
     },
     "\/library\/js\/modernizr-2.6.2.min.js" : {
@@ -260,15 +215,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/page.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/library\/scss\/susy\/_units.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -280,15 +226,6 @@
       "outputAbbreviatedPath" : "\/library\/css\/_units.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/library\/bones.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/bones.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/library\/scss\/_38em.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -302,17 +239,25 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_modernizr.scss" : {
+    "\/library\/bones.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_modernizr.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_modernizr.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/library\/bones.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/img\/green_overlay.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/green_overlay.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/green_overlay.png",
+      "initialSize" : 41474,
+      "fileType" : 8192
     },
     "\/library\/scss\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -326,6 +271,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/front-page.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/front-page.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/404.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -334,6 +288,17 @@
       "inputAbbreviatedPath" : "\/404.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/library\/img\/garth.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/garth.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/garth.jpg",
+      "initialSize" : 180851,
+      "fileType" : 4096
     },
     "\/library\/scss\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -346,17 +311,6 @@
       "outputAbbreviatedPath" : "\/library\/css\/ie.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/library\/img\/startup\/startup-tablet-landscape.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-landscape.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-tablet-landscape.png",
-      "initialSize" : 59157,
-      "fileType" : 8192
     },
     "\/library\/scss\/_base.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -390,18 +344,6 @@
       "inputAbbreviatedPath" : "\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
-    },
-    "\/library\/scss\/_buttons.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_buttons.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_buttons.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/library\/scss\/susy\/_media.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -461,13 +403,13 @@
       "fileType" : 32768
     },
     "\/library\/js\/plugins.js" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/library\/js\/plugins.js",
       "outputStyle" : 0,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/library\/js\/plugins.min.js",
       "fileType" : 64
     },
@@ -511,25 +453,36 @@
       "outputAbbreviatedPath" : "\/library\/js\/selectivizr.min.min.js",
       "fileType" : 64
     },
-    "\/library\/img\/startup\/startup-retina.png" : {
+    "\/panel-footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/startup\/startup-retina.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/startup\/startup-retina.png",
-      "initialSize" : 59301,
-      "fileType" : 8192
-    },
-    "\/page-styles.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/page-styles.php",
+      "inputAbbreviatedPath" : "\/panel-footer.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/library\/js\/plugins\/jquery.parallax-1.1.3.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.min.js",
+      "fileType" : 64
+    },
+    "\/library\/img\/bump_white.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_white.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_white.png",
+      "initialSize" : 1901,
+      "fileType" : 8192
     },
     "\/library\/scss\/susy\/_settings.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -620,24 +573,21 @@
       "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
       "fileType" : 64
     },
-    "\/library\/scss\/_nav.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_nav.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_nav.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/admin.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -652,39 +602,6 @@
       "outputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.min.js",
       "fileType" : 64
     },
-    "\/library\/admin.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/library\/scss\/_page.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_page.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_page.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/scss\/_texture.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_texture.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_texture.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/library\/scss\/susy\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -694,18 +611,6 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/library\/css\/_grid.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/library\/scss\/_typography.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_typography.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_typography.css",
       "fileType" : 4,
       "debugStyle" : 0
     }
@@ -721,7 +626,14 @@
     {
       "type" : 1,
       "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.foundation.navigation.js",
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.placeholder.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.js",
       "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
       "followForSyntaxChecking" : 1
     }
@@ -904,8 +816,8 @@
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "320-master",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "garth-theme",
+    "displayValueWasSetByUser" : 1,
     "compassEnabled" : 1
   }
 }

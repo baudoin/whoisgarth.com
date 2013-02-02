@@ -5,11 +5,11 @@
       Modernizr = window.Modernizr;
 
   $(document).ready(function() {
-    $.fn.foundationNavigation       ? $doc.foundationNavigation() : null;
-    $.fn.placeholder                ? $('input, textarea').placeholder() : null;
-
+    $('input, textarea').placeholder();
 
     // Custom Scripts
+
+    $('#garth').parallax("50%", 0.2);
 
     
   });

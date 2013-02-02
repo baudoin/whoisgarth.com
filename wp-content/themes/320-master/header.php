@@ -38,20 +38,27 @@
 
 <body <?php body_class(); ?>>
 
-	<div id="container">
-		
-		<header class="header" role="banner">
-		
-			<div id="inner-header" class="wrap clearfix">
-				
-				<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-				
-				<?php // bloginfo('description'); ?>
-				
-				<nav role="navigation">
-					<?php main_nav(); ?>
-				</nav>
+	<nav class="nav" role="navigation">
+
+		<ul class="clearfix">
+			<li><a href="#">What I Do</a></li>
+			<li><a href="#">Who Is Garth?</a></li>
+			<li><a href="#">Power In Numbers</a></li>
+			<li><a href="#">Should We Work Together?</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+
+	</nav>
+
+	<header class="header" role="banner">
+
+		<ul class="social">
+			<li class="tw"><a href="#"><i class="icon-twitter"></i></a></li>
+			<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>
+			<li class="li"><a href="#"><i class="icon-linkedin-sign"></i></a></li>
+		</ul>
 			
-			</div> <!-- end #inner-header -->
-		
-		</header> <!-- end header -->
+		<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Garth <span>Online Marketing, SEO, PPC &amp; Social Media</span></a></h1>
+		<p>Phone# 503-888-9051</p>
+	
+	</header> <!-- end header -->

@@ -10,14 +10,10 @@ Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
 @import "compass"; // Compass
 @import "reset"; // CSS reset
 @import "mixins"; // Mixins
-@import "susy"; // Susy Grids 
-@import "typography"; // Block level (h1, p) and text-level (em, strong) type
-@import "texture"; // Alerts, badges, boxes and gradients
+@import "susy"; // Susy Grids
+
 @import "forms"; // Standard form controls
-@import "buttons"; // Button styles (optional)
 @import "font-awesome"; // Font Awesome icon fonts (optional)
-@import "tables"; // Tables
-@import "nav"; // Navigation
 
 @import "30em";
 @import "38em";

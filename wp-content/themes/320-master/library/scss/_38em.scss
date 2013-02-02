@@ -10,7 +10,202 @@
 /* 38em =================================================== */
 
 // GRID 				=====================================
+
+// Susy Grid Variables
+$total-columns  : 12;
+
 // ROOT 				=====================================
 // TYPOGRAPHY 			=====================================
 // ELEMENTS 			=====================================
-// LAYOUT 				=====================================
+// GENERAL 				=====================================
+
+.nav {
+	background: $garthgray;
+	display: block;
+	height: 29px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999999;
+
+	ul {
+		display: table;
+		margin: 0 auto;
+
+		li {
+			float: left;
+
+			&:before {
+				content: "/";
+			}
+
+			&:first-child:before {
+				content: "";
+			}
+
+			a {
+				color: $textcolor;
+				@include font-size(12);
+				line-height: 2.5;
+				margin: 0 12px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.header {
+	height: 161px;
+	padding-top: 61px;
+
+	.social {
+		top: 39px;
+	}
+}
+
+.panel {
+
+	.story {
+		padding-bottom: 100px;
+		padding-top: 100px;
+		max-width: 80%;
+	}
+}
+
+
+// SECTIONS 			=====================================
+
+#garth {
+	background: url(../img/garth.jpg) 50% 0 no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+
+	height: 800px;
+
+	.story {
+		padding-top: 142px;
+	}
+
+	.copy {
+		@include span-columns(6,12);
+
+		.lead {
+			padding-right: 20%;
+		}
+	}
+}
+
+#what {
+
+	.story {
+	}
+
+	.graphic {
+	}
+
+	hr { margin: 40px 0; }
+
+	.copy {
+
+		&.left {
+			@include span-columns(4,12);
+			@include post(2); 
+
+			p {
+			}
+		}
+
+		&.right {
+			@include span-columns(6 omega,12);
+
+			p {
+			}
+		}
+	}
+}
+
+#who {
+
+	.graphic {
+		@include span-columns(4,12);
+		@include post(1);
+	}
+	.copy {
+		@include span-columns(7,12);
+	}
+}
+
+#work {
+
+	hr.dotted {
+		display: block;
+	}
+
+	ul {
+		@include span-columns(6,12);
+		padding-right: $gutter-width * 2;
+
+		&.right {
+			@include span-columns(6 omega,12);
+		}
+
+		li {
+			&:first-child {
+				border: none;
+			}
+		}
+	}
+}
+
+#together {
+
+	blockquote {
+		max-width: 80%;
+
+		br {
+			display: block;
+		}
+	}
+
+	ul {
+		@include span-columns(6,12);
+
+		&.right {
+			@include span-columns(6 omega,12);
+		}
+	}
+
+	.outro {
+		max-width: 60%;
+	}
+}
+
+#contact {
+	background: #323232;
+
+	.copy {
+		@include span-columns(5,12);
+		@include post(1);
+	}
+
+	.form-wrap {
+		@include span-columns(6 omega,12);
+	}
+
+	.footer {
+
+		.col {
+			@include span-columns(4,12);
+			margin-bottom: 0;
+
+			&:last-child {
+				@include span-columns(4 omega,12);
+			}
+		}
+	}
+}

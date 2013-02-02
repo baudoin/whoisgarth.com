@@ -14,18 +14,10 @@ Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
 @import "mixins"; // Mixins
 @import "susy"; // Susy Grids
  
-/* Typography */
- 
-@import "typography"; // Block level (h1, p) and text-level (em, strong) type
+/* Others */
 
-/* UI */
-
-@import "texture"; // Alerts, badges, boxes and gradients
 @import "forms"; // Standard form controls
-@import "buttons"; // Button styles (optional)
 @import "font-awesome"; // Font Awesome icon fonts (optional)
-@import "tables"; // Tables
-@import "nav"; // Navigation
 
 /* Base Site Styles */
 

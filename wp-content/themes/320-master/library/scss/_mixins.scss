@@ -13,14 +13,14 @@
 
 /* Typography */
 
-$basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$basefont : "CopseRegular", Cambria, Georgia, Times;
 $basefontsize : 16;
 $baselineheight : 1.33em;
 $baseheadingfont : inherit;
 $baseheadingfontweight : bold;
 $baseheadingfontcolor : inherit;
 
-$altfont : Cambria, Georgia, Times, "Times New Roman";
+$altfont : "LeagueGothic", Helvetica, Arial, sans-serif;
 $altlineheight : 1.35em;
 
 $codefont : Monaco, Courier New, monospace;
@@ -34,13 +34,14 @@ $darkgray 		: lighten($black, 25%);
 $gray 			: lighten($black, 50%);
 $lightgray 		: lighten($black, 75%);
 $lightergray 	: lighten($black, 90%);
+$garthgray		: #7F8381;
 $white 			: rgb(255,255,255);
 
 $blue			: rgb(78,187,255);
 
 $bodycolor 		: $white;
-$textcolor 		: $darkgray;
-$basecolor 		: rgb(45,53,62);
+$textcolor 		: $white;
+$basecolor 		: $garthgray;
 $compcolor 		: adjust-hue($basecolor, 180);
 $bordercolor    : lighten($basecolor, 60%);
 
@@ -50,79 +51,6 @@ $linkcolor 		    : $blue;
 $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited   : $blue;
 $linkcolorfocus 	: darken($linkcolorvisited, 10);
-
-// palettes
-
-$alertcolor 	: rgb(252,248,227);
-$errorcolor 	: rgb(218,79,73);
-$infocolor 		: rgb(217,237,247);
-$inverscolor 	: rgb(65,65,65);
-$successcolor 	: rgb(91,183,91);
-$warningcolor 	: rgb(250,167,50);
-
-// alert
-
-$alertbordercolor	: darken($alertcolor, 20%);
-$alertborderwidth 	: 1px;
-$alertborderstyle 	: solid;
-$alerttext			: darken($alertcolor, 60%);
-
-// alert-error
-$alerterrorcolor 	: lighten($errorcolor, 30%);
-$alerterrorborder  	: lighten($errorcolor, 20%);
-$alerterrortext 	: $errorcolor;
-
-// alert-info
-$alertinfocolor 	: $infocolor;
-$alertinfoborder  	: lighten($infocolor, 20%);
-$alertinfotext 		: darken($infocolor, 50%);
-
-// alert-inverse
-$alertinversecolor 	: $inverscolor;
-$alertinverseborder : $black;
-$alertinversetext 	: $white;
-
-// alert-success
-$alertsuccesscolor 	: lighten($successcolor, 30%);
-$alertsuccessborder : lighten($successcolor, 20%);
-$alertsuccesstext 	: darken($successcolor, 20%);
-
-// alert-warning
-$alertwarningcolor 	: lighten($warningcolor, 30%);
-$alertwarningborder : lighten($warningcolor, 20%);
-$alertwarningtext 	: darken($warningcolor, 20%);
-
-// badges
-
-$badgebackground 	: $lightergray;
-$badgecolor 		: $gray;
-
-// buttons
-
-$buttonbackground 	: $lightergray;
-$buttonbordercolor 	: darken($buttonbackground, 10%);
-$buttonbottombordercolor : darken($buttonbordercolor, 10%);
-$buttoncolor 		: $darkgray;
-$buttonborderwidth	: 1px;
-$buttonborderstyle	: solid;
-
-// boxes (well)
-
-$wellbackground		: lighten($basecolor, 80%);
-$wellbordercolor	: darken($wellbackground, 15%);
-$wellborderwidth	: 1px;
-$wellborderstyle	: solid;
-$wellshadow			: darken($wellbackground, 8%);
-$wellshadowblur		: 5px;
-
-// tables
-
-$tablebackground 	: transparent;
-$tablestripe 		: lighten($basecolor, 60%);
-$tablehover 		: lighten($basecolor, 50%);
-$tableborder 		: lighten($basecolor, 40%);
-$tableborderwidth	: 1px;
-$tableborderstyle	: solid;
 
 // forms
 
@@ -142,11 +70,6 @@ $textDirection: ltr;
 $defaultFloat: left;
 $defaultOpposite: right;
 
-// Nav Bar Settings
-
-$navBarHeight: 40px;
-$navFlyoutBaseWidth: 250px;
-
 
 // TYPOGRAPHY 				==============================
 
@@ -158,6 +81,34 @@ font-size : #{$font-size / 10}rem; }
 overflow : hidden;
 text-overflow : ellipsis;
 white-space : nowrap; }
+
+// Copse 
+
+@font-face {
+    font-family: 'CopseRegular';
+    src: url('../fonts/Copse-Regular-webfont.eot');
+    src: url('../fonts/Copse-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Copse-Regular-webfont.woff') format('woff'),
+         url('../fonts/Copse-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Copse-Regular-webfont.svg#CopseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// League
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 // GRADIENTS 					==============================
@@ -195,6 +146,14 @@ white-space : nowrap; }
 }
 
 // ELEMENTS 				==============================
+
+// Box Sizing FTW
+
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing:    border-box; 
+  box-sizing:         border-box; 
+}
 
 // links 
 
@@ -242,8 +201,11 @@ hr {
 	padding : 0;
 	height : 1px;
 	border : 0;
-	border-top : 1px solid $bordercolor;
 	border-bottom : 1px solid $white; 
+
+	&.dotted {
+		border-bottom : 2px dotted $white;
+	}
 }
 
 // img
@@ -253,6 +215,16 @@ img {
 	border-width : 0;
 	vertical-align : middle;
 	-ms-interpolation-mode : bicubic; 
+}
+
+@mixin at2x($image_name, $w: auto, $h: auto, $extention: '.png') {
+  background-image: image_url($image_name + $extention);
+  $x2img : $image_name + '@2x' + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: image_url($x2img);
+    background-size: $w $h;
+  }  
 }
 
 svg:not(:root) {
