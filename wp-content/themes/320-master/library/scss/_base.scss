@@ -264,7 +264,6 @@ sub {
 }
 
 
-
 // GENERAL	 			=====================================
 
 .header {
@@ -272,10 +271,12 @@ sub {
 	color: $garthgray;
 	font-family: $altfont;
 	height: 60px;
-	position: relative;
+	position: fixed;
 	overflow: visible;
 	text-align: left;
 	text-transform: uppercase;
+	z-index: 98;
+	width: 100%;
 
 	.inner {
 		@include container;
@@ -324,7 +325,7 @@ sub {
 		left: 0;
 		background: white;
 		padding: 5px 0 14px 16px;
-		z-index: 2;
+		z-index: 99;
 
 		ul {
 			margin: 0;
@@ -437,7 +438,7 @@ sub {
 .panel {
 	position: relative;
 	width: 100%;
-	z-index: -1;
+	z-index: 1;
 
 	.label {
 		border-right: 1px solid $white;
@@ -472,11 +473,12 @@ sub {
 
 #garth {
 	background: url(../img/garth.jpg) 63% 0 no-repeat fixed;
-	height: 418px;
+	height: 410px;
 	background-size: 225%;
+	background-position-x: 63% !important;
 
 	.story {
-		padding-top: 40px;
+		padding-top: 100px;
 	}
 
 	.copy {
@@ -485,11 +487,12 @@ sub {
 
 		h1 {
 			@include font-size(48);
+			line-height: 1;
 			margin-bottom: .32em;
 		}
 
 		p {
-			@include font-size(17);
+			@include font-size(15);
 			line-height: 1.33;
 
 			&.lead {
@@ -738,9 +741,20 @@ sub {
 		.col {
 			font-family: "Helvetica Neue", arial, helvetica;
 			color: #fffef4;
-			@include font-size(11);
-			line-height: $baselineheight;
-			margin-bottom: .5em;
+			margin-bottom: 20px;
+
+			p {
+				font-size: 1.2rem;
+			}
+		}
+
+		.social {
+			margin-bottom: 2px;
+
+			li {
+				float: left;
+				margin-right: 6px;
+			}
 		}
 	}
 }
@@ -748,6 +762,13 @@ sub {
 
 // Modernizr Specific 
 
-.webkit.touch {
+.touch {
+
+	// do not allow parrallax on iOS, Android and touch devices
+
+	#garth {
+		background-position: 60% 25% !important;
+		background-attachment: scroll !important;
+	}
 
 }

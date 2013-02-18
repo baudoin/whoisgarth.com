@@ -14,9 +14,6 @@
 // Susy Grid Variables
 $total-columns  : 12;
 
-// ROOT 				=====================================
-// TYPOGRAPHY 			=====================================
-// ELEMENTS 			=====================================
 // GENERAL 				=====================================
 
 .header {
@@ -25,7 +22,7 @@ $total-columns  : 12;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 
 	#nav-toggle {
 		display: none !important;
@@ -35,9 +32,10 @@ $total-columns  : 12;
 		clear: none;
 		display: block !important;
 		float: left;
+		height: auto !important;
 		padding: 0;
 		position: static !important;
-		margin-top: 28px;
+		margin-top: 28px !important;
 		width: auto;
 
 		ul {
@@ -101,7 +99,8 @@ $total-columns  : 12;
 	.story {
 		padding-bottom: 100px;
 		padding-top: 100px;
-		max-width: 80%;
+		width: 80%;
+		max-width: 1140px;
 	}
 }
 
@@ -110,12 +109,8 @@ $total-columns  : 12;
 
 #garth {
 	background: url(../img/garth.jpg) 50% 0 no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+	background-size: inherit;
+	background-position-x: 63% !important;
 	height: 722px;
 
 	.story {
@@ -123,7 +118,7 @@ $total-columns  : 12;
 	}
 
 	.copy {
-		@include span-columns(6,12);
+		@include span-columns(8,12);
 
 		h1 {
 			margin-bottom: .4em;
@@ -232,7 +227,7 @@ $total-columns  : 12;
 }
 
 #contact {
-	padding-bottom: 400px;
+	padding-bottom: 200px;
 
 	.copy {
 		@include span-columns(5,12);

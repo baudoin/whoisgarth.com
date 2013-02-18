@@ -113,12 +113,6 @@
 			<div class="copy">
 				<h3>Let's Make It Happen</h3>
 				<p>Lorem ipsum dolor sit amet. Por favor put in some stuff in here and all that. It’ll be great, need some content though.</p>
-
-				<ul class="social">
-					<li class="tw"><a href="#"><i class="icon-twitter"></i></a></li>
-					<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>
-					<li class="li"><a href="#"><i class="icon-linkedin-sign"></i></a></li>
-				</ul>
 			</div>
 
 			<div class="form-wrap">

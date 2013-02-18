@@ -17,6 +17,37 @@
 .panel {
 
 	.story {
-		max-width: 1140px;
 	}
+}
+
+
+// SECTIONS 			=====================================
+
+#garth {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+	height: 800px;
+
+	.story {
+		padding-top: 182px;
+	}
+
+	.copy {
+
+		h1 {
+			@include font-size(48);
+		}
+
+		p, .arrow-left {
+			@include font-size(24);
+		}
+	}
+}
+
+#contact {
+	padding-bottom: 400px;
 }

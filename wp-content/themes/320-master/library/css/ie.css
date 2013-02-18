@@ -1765,21 +1765,31 @@ ul.icons li [class*=" icon-"] {
 }
 
 #garth {
-  height: 662px;
+  background-position-x: 60% !important;
+  height: 524px;
 }
 #garth .story {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 #garth .copy {
-  width: 55.88235%;
+  width: 70.58824%;
   float: left;
   margin-right: 2.94118%;
   display: inline;
   line-height: 1.33em;
 }
+#garth .copy h1 {
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 1.2;
+}
 #garth .copy p, #garth .copy .arrow-left {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+#contact {
+  padding-bottom: 100px;
 }
 
 /* 38em =================================================== */
@@ -1789,7 +1799,7 @@ ul.icons li [class*=" icon-"] {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 .header #nav-toggle {
   display: none !important;
@@ -1798,9 +1808,10 @@ ul.icons li [class*=" icon-"] {
   clear: none;
   display: block !important;
   float: left;
+  height: auto !important;
   padding: 0;
   position: static !important;
-  margin-top: 28px;
+  margin-top: 28px !important;
   width: auto;
 }
 .header .nav ul {
@@ -1847,24 +1858,21 @@ ul.icons li [class*=" icon-"] {
 .panel .story {
   padding-bottom: 100px;
   padding-top: 100px;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1140px;
 }
 
 #garth {
   background: url(../img/garth.jpg) 50% 0 no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+  background-size: inherit;
+  background-position-x: 63% !important;
   height: 722px;
 }
 #garth .story {
   padding-top: 142px;
 }
 #garth .copy {
-  width: 49.15254%;
+  width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
@@ -1962,7 +1970,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 #contact {
-  padding-bottom: 400px;
+  padding-bottom: 200px;
 }
 #contact .copy {
   width: 40.67797%;
@@ -1997,32 +2005,41 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* 48em =================================================== */
-#main {
-  width: 74.57627%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1em;
-}
-
-#sidebar {
-  width: 23.72881%;
+#garth .copy {
+  width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1em;
+}
+
+#contact {
+  padding-bottom: 300px;
 }
 
 /* 62em =================================================== */
-.panel .story {
-  max-width: 1140px;
+#garth {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+  height: 800px;
+}
+#garth .story {
+  padding-top: 182px;
+}
+#garth .copy h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+#garth .copy p, #garth .copy .arrow-left {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+#contact {
+  padding-bottom: 400px;
 }
 
 /* 86em =================================================== */

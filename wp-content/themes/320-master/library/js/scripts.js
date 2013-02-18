@@ -14,9 +14,13 @@
       responsive: true
     });
 
+    // Check for iOS and change
+    var deviceAgent = navigator.userAgent.toLowerCase();
+    var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
+
     var $navJsOffset;
 
-    if ($('body').hasClass('webkit') && $('body').hasClass('touch')) {
+    if (agentID) {
       var $navJsOffset = 0;
     } else {
       var $navJsOffset = 60;
@@ -51,7 +55,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
                if (target.length) {
                  $('html,body').animate({
-                     scrollTop: target.offset().top
+                     scrollTop: target.offset().top - 60
                 }, 1000);
                 return false;
             }
@@ -70,16 +74,16 @@
 
     // Show nav when hamburger clicked
 
-    function toggleNav() {
+    $('#nav-toggle').on('click', function(){
       $('nav').slideToggle(function(){
         $('ul',this).toggleClass('show');
       });
-    }
-    $('#nav-toggle').on('click', function(){
-      toggleNav();
     });
-    $('nav li a').on('click',function(){
-      toggleNav();
+
+    $('nav li > a').on('click', function(){
+      $('nav').slideUp(function(){
+        $('ul',this).toggleClass('show');
+      });
     });
     
   });

@@ -9,26 +9,19 @@
 
 /* 48em =================================================== */
 
-// GRID 				=====================================
+// SECTIONS 			=====================================
 
-// Susy Grid Variables
-$total-columns  : 12;
+#garth {
 
-// ROOT 				=====================================
+	.story {
 
-#main {
-    @include span-columns(9 omega,12); // Susy
-    @include box-sizing(border-box);
+	}
 
-    padding: $gutter-width;
-}
-#sidebar {
-    @include span-columns(3,12); // Susy
-    @include box-sizing(border-box);
-    
-    padding: $gutter-width;
+	.copy {
+		@include span-columns(6,12);
+	}
 }
 
-// TYPOGRAPHY 			=====================================
-// ELEMENTS 			=====================================
-// LAYOUT 				=====================================
+#contact {
+	padding-bottom: 300px;
+}

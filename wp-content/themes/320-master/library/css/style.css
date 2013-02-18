@@ -2014,10 +2014,12 @@ sub {
   color: #7f8381;
   font-family: "alternate-gothic-no-1-d", Helvetica, Arial, sans-serif;
   height: 60px;
-  position: relative;
+  position: fixed;
   overflow: visible;
   text-align: left;
   text-transform: uppercase;
+  z-index: 98;
+  width: 100%;
 }
 .header .inner {
   *zoom: 1;
@@ -2073,7 +2075,7 @@ sub {
   left: 0;
   background: white;
   padding: 5px 0 14px 16px;
-  z-index: 2;
+  z-index: 99;
 }
 .header .nav ul {
   margin: 0;
@@ -2194,7 +2196,7 @@ sub {
 .panel {
   position: relative;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 .panel .label {
   border-right: 1px solid white;
@@ -2232,11 +2234,12 @@ sub {
 
 #garth {
   background: url(../img/garth.jpg) 63% 0 no-repeat fixed;
-  height: 418px;
+  height: 410px;
   background-size: 225%;
+  background-position-x: 63% !important;
 }
 #garth .story {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 #garth .copy {
   width: 70.58824%;
@@ -2248,11 +2251,12 @@ sub {
 #garth .copy h1 {
   font-size: 48px;
   font-size: 4.8rem;
+  line-height: 1;
   margin-bottom: .32em;
 }
 #garth .copy p {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.33;
 }
 #garth .copy p.lead {
@@ -2512,10 +2516,22 @@ sub {
 #contact .footer .col {
   font-family: "Helvetica Neue", arial, helvetica;
   color: #fffef4;
-  font-size: 11px;
-  font-size: 1.1rem;
-  line-height: 1.33em;
-  margin-bottom: .5em;
+  margin-bottom: 20px;
+}
+#contact .footer .col p {
+  font-size: 1.2rem;
+}
+#contact .footer .social {
+  margin-bottom: 2px;
+}
+#contact .footer .social li {
+  float: left;
+  margin-right: 6px;
+}
+
+.touch #garth {
+  background-position: 60% 25% !important;
+  background-attachment: scroll !important;
 }
 
 /* Media Queries */
@@ -2587,21 +2603,31 @@ sub {
   }
 
   #garth {
-    height: 662px;
+    background-position-x: 60% !important;
+    height: 524px;
   }
   #garth .story {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   #garth .copy {
-    width: 55.88235%;
+    width: 70.58824%;
     float: left;
     margin-right: 2.94118%;
     display: inline;
     line-height: 1.33em;
   }
+  #garth .copy h1 {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 1.2;
+  }
   #garth .copy p, #garth .copy .arrow-left {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  #contact {
+    padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 38em) {
@@ -2612,7 +2638,7 @@ sub {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
   }
   .header #nav-toggle {
     display: none !important;
@@ -2621,9 +2647,10 @@ sub {
     clear: none;
     display: block !important;
     float: left;
+    height: auto !important;
     padding: 0;
     position: static !important;
-    margin-top: 28px;
+    margin-top: 28px !important;
     width: auto;
   }
   .header .nav ul {
@@ -2670,24 +2697,21 @@ sub {
   .panel .story {
     padding-bottom: 100px;
     padding-top: 100px;
-    max-width: 80%;
+    width: 80%;
+    max-width: 1140px;
   }
 
   #garth {
     background: url(../img/garth.jpg) 50% 0 no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+    background-size: inherit;
+    background-position-x: 63% !important;
     height: 722px;
   }
   #garth .story {
     padding-top: 142px;
   }
   #garth .copy {
-    width: 49.15254%;
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
@@ -2785,7 +2809,7 @@ sub {
   }
 
   #contact {
-    padding-bottom: 400px;
+    padding-bottom: 200px;
   }
   #contact .copy {
     width: 40.67797%;
@@ -2821,33 +2845,42 @@ sub {
 }
 @media only screen and (min-width: 48em) {
   /* 48em =================================================== */
-  #main {
-    width: 74.57627%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 1em;
-  }
-
-  #sidebar {
-    width: 23.72881%;
+  #garth .copy {
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 1em;
+  }
+
+  #contact {
+    padding-bottom: 300px;
   }
 }
 @media only screen and (min-width: 62em) {
   /* 62em =================================================== */
-  .panel .story {
-    max-width: 1140px;
+  #garth {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
+    height: 800px;
+  }
+  #garth .story {
+    padding-top: 182px;
+  }
+  #garth .copy h1 {
+    font-size: 48px;
+    font-size: 4.8rem;
+  }
+  #garth .copy p, #garth .copy .arrow-left {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  #contact {
+    padding-bottom: 400px;
   }
 }
 @media only screen and (min-width: 86em) {

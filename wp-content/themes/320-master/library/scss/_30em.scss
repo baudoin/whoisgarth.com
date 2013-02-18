@@ -9,10 +9,6 @@
 
 /* 30em =================================================== */
 
-// GRID 				=====================================
-// ROOT 				=====================================
-// TYPOGRAPHY 			=====================================
-// ELEMENTS 			=====================================
 // GENERAL 				=====================================
 
 .header {
@@ -30,18 +26,28 @@
 // SECTIONS 			=====================================
 
 #garth {
-	height: 662px;
+	background-position-x: 60% !important;
+	height: 524px;
 
 	.story {
-		padding-top: 100px;
+		padding-top: 60px;
 	}
 
 	.copy {
-		@include span-columns(4,7);
+		@include span-columns(5,7);
 		line-height : $baselineheight; 
 
+		h1 {
+			@include font-size(40);
+			line-height: 1.2;
+		}
+
 		p, .arrow-left {
-			@include font-size(24);
+			@include font-size(20);
 		}
 	}
+}
+
+#contact {
+	padding-bottom: 100px;
 }
