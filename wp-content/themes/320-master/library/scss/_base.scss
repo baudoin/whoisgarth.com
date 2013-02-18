@@ -264,35 +264,24 @@ sub {
 }
 
 
+
 // GENERAL	 			=====================================
 
-.nav {
-	display: none;
-}
-
 .header {
-	@include container;
-
+	background: $white;
 	color: $garthgray;
 	font-family: $altfont;
-	height: 132px;
-	padding-top: 24px;
-	padding-bottom: 20px;
+	height: 60px;
 	position: relative;
+	overflow: visible;
 	text-align: left;
 	text-transform: uppercase;
 
-	&:after {
-		@include at2x("bump_white", 139px, 21px);
-		background-repeat: no-repeat;
-		content: "";
-		height: 21px;
-		position: absolute;
-		bottom: -21px;
-		left: 50%;
-		margin-left: -71px;
-		width: 139px;
-		z-index: 1;
+	.inner {
+		@include container;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1140px;
 	}
 
 	h1 {
@@ -317,6 +306,100 @@ sub {
 	p {
 		@include font-size(16);
 		margin: 0;
+	}
+
+	#nav-toggle {
+		cursor: pointer;
+		font-size: 2em;
+		float: left;
+		margin: 14px 0 0 12px;
+		display: block;
+	}
+
+	.nav {
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		background: white;
+		padding: 5px 0 14px 16px;
+		z-index: 2;
+
+		ul {
+			margin: 0;
+			@include opacity(0);
+			@include transition-property(opacity);
+			@include transition-duration(.5s);
+			@include transition-timing-function(ease-in);
+
+			&.show {
+				@include opacity(1);
+			}
+
+			li {
+
+				a {
+					color: $garthgray;
+					@include font-size(20);
+					line-height: 1;
+					margin: 0 12px 10px;
+					display: block;
+					text-transform: uppercase;
+
+					&:hover {
+						border-bottom: none;
+					}
+				}
+
+				&.current {
+					&.what a { color: #42ba90; }
+					&.who a { color: #1e4393; }
+					&.work a { color: #349946; }
+					&.contact a { color: #323232; }
+				}
+
+				&.what a:hover { color: #42ba90; }
+				&.who a:hover { color: #1e4393; }
+				&.work a:hover { color: #349946; }
+				&.contact a:hover { color: #323232; }
+
+				&.garth {
+					display: none !important;
+				}
+			}
+		}
+	}
+
+	.right {
+		float: right;
+		margin-top: 12px;
+
+		p {
+			color: $garthgray;
+			@include font-size(20);
+			line-height: 1;
+
+			a {
+				color: $garthgray !important;
+			}
+
+			span {
+				display: inline-block;
+				padding: 3px 12px 3px 14px;
+				border-left: 1px solid $garthgray;
+				margin-left: 10px;
+				font-size: 2.75rem;
+
+				a {
+					color: $garthgray;
+				}
+
+				i {
+					vertical-align: middle;
+				}
+			}
+		}
 	}
 
 	.social {
@@ -354,6 +437,7 @@ sub {
 .panel {
 	position: relative;
 	width: 100%;
+	z-index: -1;
 
 	.label {
 		border-right: 1px solid $white;
@@ -369,7 +453,7 @@ sub {
 			color: $white;
 			font-family: $altfont;
 			font-weight: normal;
-			line-height: 1.9;
+			line-height: 1.7;
 			text-transform: uppercase;
 		}
 	}
@@ -387,24 +471,52 @@ sub {
 // SECTIONS 			=====================================
 
 #garth {
-	background: url(../img/garth.jpg) 50% 0 no-repeat fixed;
-	height: 600px;
-	// background-size: 300% auto;
-	// background-attachment: scroll;
+	background: url(../img/garth.jpg) 63% 0 no-repeat fixed;
+	height: 418px;
+	background-size: 225%;
 
 	.story {
-		padding-top: 100px;
+		padding-top: 40px;
 	}
 
 	.copy {
-		@include span-columns(4,7);
+		@include span-columns(5,7);
 		line-height : $baselineheight; 
+
+		h1 {
+			@include font-size(48);
+			margin-bottom: .32em;
+		}
+
+		p {
+			@include font-size(17);
+			line-height: 1.33;
+
+			&.lead {
+				display: none;
+			}			
+		}
+
+		.arrow-left {
+			@include font-size(17);
+			line-height: 1;
+
+			&:before {
+				float: left;
+				@include cssTriangle(12px,$white,left);
+			}
+		}
 	}
 }
 
 
 #what {
 	background: #42ba90;
+	@include background-image(linear-gradient(#349472, #3CA07C 20px, #5abb8c 60px, #5abb8c));
+
+	.label {
+		top: -20px;
+	}
 
 	.story {
 		margin: 0 auto;
@@ -439,6 +551,7 @@ sub {
 
 #who {
 	background: #1e4393;
+	@include background-image(linear-gradient(#163274, #1A3C81 20px, #1E4591 60px, #1E4591));
 
 	.graphic {
 		text-align: center;
@@ -458,6 +571,7 @@ sub {
 
 #work {
 	background: #349946;
+	@include background-image(linear-gradient(#2A7F3B, #2F8940 20px, #359A4A 60px, #359A4A));
 
 	h3 {
 		font-family: $altfont;
@@ -484,7 +598,7 @@ sub {
 
 				&.title {
 					position: relative;
-					margin-bottom: .2em;
+					margin-bottom: .8em;
 
 					&:before {
 						@include cssTriangle(6px, $white, left);
@@ -552,6 +666,7 @@ sub {
 
 #contact {
 	background: #323232;
+	@include background-image(linear-gradient(#272727, #2A2B2A 20px, #323232 60px, #323232));
 
 	.copy {
 		h3	{
@@ -563,6 +678,52 @@ sub {
 		p {
 			@include font-size(22);
 			line-height: $baselineheight;
+		}
+	}
+
+	.form-wrap {
+
+		// Formidable Forms 
+
+		.with_frm_style {
+
+			.frm_form_fields input, 
+			#wpcontent .frm_form_fields select, 
+			.frm_form_fields select, 
+			.frm_form_fields textarea {
+				@include at2x("field_bg", 8px, 8px);
+				background-attachment: fixed;
+				@include font-size(16);
+				border: none !important;
+				color: darken(#313131, 6%);
+				padding: 8px;
+				width: 100% !important;
+
+				&:active, &:focus, &.value {
+					background: darken(#313131, 6%);
+					color: $white;
+				}
+			}
+
+			.frm_top_container label.frm_primary_label {
+				@include font-size(16);
+			}
+
+			p.submit {
+				padding: 0;
+				float: right;
+
+				input {
+					background: $white;
+					border: none;
+					color: #313131;
+					@include font-size(19);
+					height: 32px;
+					padding: 0 8px;
+					font-family: $altfont;
+					text-transform: uppercase;
+				}
+			}
 		}
 	}
 
@@ -582,4 +743,11 @@ sub {
 			margin-bottom: .5em;
 		}
 	}
+}
+
+
+// Modernizr Specific 
+
+.webkit.touch {
+
 }

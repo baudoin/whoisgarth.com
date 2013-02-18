@@ -19,48 +19,80 @@ $total-columns  : 12;
 // ELEMENTS 			=====================================
 // GENERAL 				=====================================
 
-.nav {
-	background: $garthgray;
-	display: block;
-	height: 29px;
+.header {
+	height: 72px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 999999;
+	z-index: 1;
 
-	ul {
-		display: table;
-		margin: 0 auto;
+	#nav-toggle {
+		display: none !important;
+	}
 
-		li {
-			float: left;
+	.nav {
+		clear: none;
+		display: block !important;
+		float: left;
+		padding: 0;
+		position: static !important;
+		margin-top: 28px;
+		width: auto;
 
-			&:before {
-				content: "/";
-			}
+		ul {
+			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+			opacity: 1 !important;
+			margin: 0;
 
-			&:first-child:before {
-				content: "";
-			}
+			li {
+				float: left;
 
-			a {
-				color: $textcolor;
-				@include font-size(12);
-				line-height: 2.5;
-				margin: 0 12px;
-				text-transform: uppercase;
+				&:before {
+					content: "/";
+					@include font-size(20);
+				}
+
+				&.what, &.garth {
+					a {
+						margin-left: 0;
+					}
+					&:before {
+						content: "";
+					}
+				}
+
+				a {
+					color: $garthgray;
+					display: inline;
+					line-height: 1;
+					margin: 0 12px;
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: none;
+						color: lighten($garthgray, 25%);
+					}
+				}
+
+				&.current {
+					a {
+						color: darken($garthgray, 25%);
+					}
+				}
 			}
 		}
 	}
-}
 
-.header {
-	height: 161px;
-	padding-top: 61px;
+	.right {
+		float: right;
+		margin-top: 16px;
 
-	.social {
-		top: 39px;
+		p {
+			span {
+				padding: 6px 14px 5px;
+			}
+		}
 	}
 }
 
@@ -84,8 +116,7 @@ $total-columns  : 12;
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
-
-	height: 800px;
+	height: 722px;
 
 	.story {
 		padding-top: 142px;
@@ -94,8 +125,16 @@ $total-columns  : 12;
 	.copy {
 		@include span-columns(6,12);
 
-		.lead {
+		h1 {
+			margin-bottom: .4em;
+		}
+
+		p {
 			padding-right: 20%;
+
+			&.lead {
+				display: block;
+			}
 		}
 	}
 }
@@ -114,7 +153,8 @@ $total-columns  : 12;
 
 		&.left {
 			@include span-columns(4,12);
-			@include post(2); 
+			@include pre(1);
+			@include post(1); 
 
 			p {
 			}
@@ -131,12 +171,13 @@ $total-columns  : 12;
 
 #who {
 
-	.graphic {
-		@include span-columns(4,12);
-		@include post(1);
-	}
 	.copy {
 		@include span-columns(7,12);
+		@include push(5);
+	}
+	.graphic {
+		@include span-columns(6,12);
+		@include pull(13);
 	}
 }
 
@@ -147,11 +188,16 @@ $total-columns  : 12;
 	}
 
 	ul {
-		@include span-columns(6,12);
+		@include span-columns(5,12);
 		padding-right: $gutter-width * 2;
+		
+		&.left {
+			@include pre(1);
+		}
 
 		&.right {
-			@include span-columns(6 omega,12);
+			@include span-columns(5 omega,12);
+			@include post(1);
 		}
 
 		li {
@@ -186,7 +232,7 @@ $total-columns  : 12;
 }
 
 #contact {
-	background: #323232;
+	padding-bottom: 400px;
 
 	.copy {
 		@include span-columns(5,12);
@@ -198,6 +244,7 @@ $total-columns  : 12;
 	}
 
 	.footer {
+		max-width: 1140px;
 
 		.col {
 			@include span-columns(4,12);

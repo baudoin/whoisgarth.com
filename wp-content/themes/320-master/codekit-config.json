@@ -13,6 +13,17 @@
       "outputAbbreviatedPath" : "\/library\/js\/plugins.min.min.js",
       "fileType" : 64
     },
+    "\/library\/img\/bump_green@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_green@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_green@2x.png",
+      "initialSize" : 2282,
+      "fileType" : 8192
+    },
     "\/header.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -21,6 +32,17 @@
       "inputAbbreviatedPath" : "\/header.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/library\/img\/bump_blue.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_blue.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_blue.png",
+      "initialSize" : 1556,
+      "fileType" : 8192
     },
     "\/library\/js\/plugins\/jquery.placeholder.js" : {
       "ignoreWasSetByUser" : 0,
@@ -103,15 +125,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/img\/diagram.png" : {
+    "\/library\/img\/bump_orange@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/diagram.png",
+      "inputAbbreviatedPath" : "\/library\/img\/bump_orange@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/diagram.png",
-      "initialSize" : 32497,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_orange@2x.png",
+      "initialSize" : 2280,
       "fileType" : 8192
     },
     "\/library\/scss\/_86em.scss" : {
@@ -125,6 +147,50 @@
       "outputAbbreviatedPath" : "\/library\/css\/_86em.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/library\/img\/diagram.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/diagram.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/diagram.png",
+      "initialSize" : 32497,
+      "fileType" : 8192
+    },
+    "\/library\/img\/bump_blue@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_blue@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_blue@2x.png",
+      "initialSize" : 2282,
+      "fileType" : 8192
+    },
+    "\/library\/js\/plugins\/jquery.nav.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.nav.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.nav.min.js",
+      "fileType" : 64
+    },
+    "\/library\/img\/bump_teal.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_teal.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_teal.png",
+      "initialSize" : 1562,
+      "fileType" : 8192
     },
     "\/library\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
@@ -159,17 +225,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/js\/plugins\/helper.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/plugins\/helper.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/plugins\/helper.min.js",
-      "fileType" : 64
-    },
     "\/library\/img\/worms.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -180,6 +235,17 @@
       "outputAbbreviatedPath" : "\/library\/img\/worms.png",
       "initialSize" : 20945,
       "fileType" : 8192
+    },
+    "\/library\/js\/plugins\/helper.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/helper.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/helper.min.js",
+      "fileType" : 64
     },
     "\/library\/js\/modernizr-2.6.2.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -259,6 +325,17 @@
       "initialSize" : 41474,
       "fileType" : 8192
     },
+    "\/library\/img\/arrows.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/arrows.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/arrows.png",
+      "initialSize" : 2847,
+      "fileType" : 8192
+    },
     "\/library\/scss\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -289,16 +366,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/img\/garth.jpg" : {
+    "\/library\/img\/bump_green.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/img\/garth.jpg",
+      "inputAbbreviatedPath" : "\/library\/img\/bump_green.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/library\/img\/garth.jpg",
-      "initialSize" : 180851,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/library\/img\/bump_green.png",
+      "initialSize" : 1556,
+      "fileType" : 8192
     },
     "\/library\/scss\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -324,6 +401,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/library\/img\/teal_overlay.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/teal_overlay.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/teal_overlay.png",
+      "initialSize" : 161056,
+      "fileType" : 8192
+    },
     "\/library\/scss\/_susy.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -345,6 +433,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/library\/img\/garth.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/garth.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/garth.jpg",
+      "initialSize" : 180851,
+      "fileType" : 4096
+    },
     "\/library\/scss\/susy\/_media.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -356,6 +455,17 @@
       "outputAbbreviatedPath" : "\/library\/css\/_media.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/library\/img\/bump_teal@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/bump_teal@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_teal@2x.png",
+      "initialSize" : 2282,
+      "fileType" : 8192
     },
     "\/library\/scss\/_48em.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -381,17 +491,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_forms.scss" : {
+    "\/library\/img\/field_bg.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_forms.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_forms.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/library\/img\/field_bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/field_bg.png",
+      "initialSize" : 1069,
+      "fileType" : 8192
     },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
@@ -442,6 +551,29 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/library\/scss\/_forms.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/scss\/_forms.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_forms.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/library\/js\/plugins\/jquery.stellar.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.stellar.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.stellar.min.js",
+      "fileType" : 64
+    },
     "\/library\/js\/selectivizr.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -453,6 +585,17 @@
       "outputAbbreviatedPath" : "\/library\/js\/selectivizr.min.min.js",
       "fileType" : 64
     },
+    "\/library\/js\/plugins\/jquery.scrollTo.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.scrollTo.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.scrollTo.min.js",
+      "fileType" : 64
+    },
     "\/panel-footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -462,16 +605,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/js\/plugins\/jquery.parallax-1.1.3.js" : {
+    "\/library\/img\/bump_orange.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/library\/img\/bump_orange.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/bump_orange.png",
+      "initialSize" : 1554,
+      "fileType" : 8192
     },
     "\/library\/img\/bump_white.png" : {
       "ignoreWasSetByUser" : 0,
@@ -526,17 +669,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/scss\/_30em.scss" : {
+    "\/library\/js\/plugins\/jquery.easing.1.3.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/scss\/_30em.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/library\/css\/_30em.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.easing.1.3.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/plugins\/jquery.easing.1.3.min.js",
+      "fileType" : 64
     },
     "\/library\/scss\/susy\/_padding.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -562,16 +704,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/library\/js\/scripts.js" : {
+    "\/library\/scss\/_30em.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/js\/scripts.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/library\/scss\/_30em.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/library\/css\/_30em.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/footer.php" : {
       "ignoreWasSetByUser" : 0,
@@ -582,14 +725,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/library\/admin.php" : {
+    "\/library\/js\/scripts.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/library\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/library\/js\/scripts.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/library\/js\/scripts.min.js",
+      "fileType" : 64
     },
     "\/library\/js\/jquery-1.7.2.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -601,6 +746,26 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/library\/js\/jquery-1.7.2.min.min.js",
       "fileType" : 64
+    },
+    "\/library\/admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/library\/img\/field_bg@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/library\/img\/field_bg@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/library\/img\/field_bg@2x.png",
+      "initialSize" : 1271,
+      "fileType" : 8192
     },
     "\/library\/scss\/susy\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -633,7 +798,28 @@
     {
       "type" : 1,
       "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.parallax-1.1.3.js",
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.easing.1.3.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.nav.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.scrollTo.js",
+      "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/library\/js\/plugins\/jquery.stellar.js",
       "baseFileAbbreviatedPath" : "\/library\/js\/plugins.js",
       "followForSyntaxChecking" : 1
     }

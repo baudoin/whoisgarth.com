@@ -16,7 +16,7 @@
 // GENERAL 				=====================================
 
 .header {
-	text-align: center;
+
 }
 
 .panel {
@@ -30,7 +30,18 @@
 // SECTIONS 			=====================================
 
 #garth {
+	height: 662px;
+
+	.story {
+		padding-top: 100px;
+	}
 
 	.copy {
+		@include span-columns(4,7);
+		line-height : $baselineheight; 
+
+		p, .arrow-left {
+			@include font-size(24);
+		}
 	}
 }

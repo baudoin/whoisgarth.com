@@ -13,14 +13,14 @@
 
 /* Typography */
 
-$basefont : "CopseRegular", Cambria, Georgia, Times;
+$basefont : "adelle", Cambria, Georgia, Times;
 $basefontsize : 16;
 $baselineheight : 1.33em;
 $baseheadingfont : inherit;
-$baseheadingfontweight : bold;
+$baseheadingfontweight : 700;
 $baseheadingfontcolor : inherit;
 
-$altfont : "LeagueGothic", Helvetica, Arial, sans-serif;
+$altfont : "alternate-gothic-no-1-d", Helvetica, Arial, sans-serif;
 $altlineheight : 1.35em;
 
 $codefont : Monaco, Courier New, monospace;
@@ -47,9 +47,9 @@ $bordercolor    : lighten($basecolor, 60%);
 
 // links
 
-$linkcolor 		    : $blue;
-$linkcolorhover 	: darken($linkcolor, 10);
-$linkcolorvisited   : $blue;
+$linkcolor 		    : $white;
+$linkcolorhover 	: $white;
+$linkcolorvisited   : $white;
 $linkcolorfocus 	: darken($linkcolorvisited, 10);
 
 // forms
@@ -81,34 +81,6 @@ font-size : #{$font-size / 10}rem; }
 overflow : hidden;
 text-overflow : ellipsis;
 white-space : nowrap; }
-
-// Copse 
-
-@font-face {
-    font-family: 'CopseRegular';
-    src: url('../fonts/Copse-Regular-webfont.eot');
-    src: url('../fonts/Copse-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Copse-Regular-webfont.woff') format('woff'),
-         url('../fonts/Copse-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Copse-Regular-webfont.svg#CopseRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-// League
-
-@font-face {
-    font-family: 'LeagueGothicRegular';
-    src: url('../fonts/League_Gothic-webfont.eot');
-    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/League_Gothic-webfont.woff') format('woff'),
-         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
-         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
 // GRADIENTS 					==============================
@@ -166,7 +138,8 @@ a {
 	}
 
 	&:hover {
-		text-decoration : underline;
+		border-bottom: 1px dotted $white;
+		text-decoration : none;
 		color : $linkcolorhover; 
 	}
 

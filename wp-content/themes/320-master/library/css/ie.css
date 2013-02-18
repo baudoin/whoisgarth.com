@@ -25,22 +25,6 @@ article, aside, figure, footer, header, hgroup, nav, section {
 /* Typography */
 /* Color */
 /* Layout */
-@font-face {
-  font-family: 'CopseRegular';
-  src: url("../fonts/Copse-Regular-webfont.eot");
-  src: url("../fonts/Copse-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Copse-Regular-webfont.woff") format("woff"), url("../fonts/Copse-Regular-webfont.ttf") format("truetype"), url("../fonts/Copse-Regular-webfont.svg#CopseRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LeagueGothicRegular';
-  src: url("../fonts/League_Gothic-webfont.eot");
-  src: url("../fonts/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/League_Gothic-webfont.woff") format("woff"), url("../fonts/League_Gothic-webfont.ttf") format("truetype"), url("../fonts/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -49,18 +33,19 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 a {
   text-decoration: none;
-  color: #4ebbff;
+  color: white;
 }
 a:visited {
-  color: #4ebbff;
+  color: white;
 }
 a:hover {
-  text-decoration: underline;
-  color: #1ba7ff;
+  border-bottom: 1px dotted white;
+  text-decoration: none;
+  color: white;
 }
 a:focus {
   outline: thin dotted;
-  color: #1ba7ff;
+  color: #e6e6e6;
 }
 a:hover, a:active {
   outline: 0;
@@ -194,7 +179,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "CopseRegular", Cambria, Georgia, Times;
+  font-family: "adelle", Cambria, Georgia, Times;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1775,53 +1760,88 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* 30em =================================================== */
-.header {
-  text-align: center;
-}
-
 .panel .story {
   max-width: 80%;
 }
 
+#garth {
+  height: 662px;
+}
+#garth .story {
+  padding-top: 100px;
+}
+#garth .copy {
+  width: 55.88235%;
+  float: left;
+  margin-right: 2.94118%;
+  display: inline;
+  line-height: 1.33em;
+}
+#garth .copy p, #garth .copy .arrow-left {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
 /* 38em =================================================== */
-.nav {
-  background: #7f8381;
-  display: block;
-  height: 29px;
+.header {
+  height: 72px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999999;
+  z-index: 1;
 }
-.nav ul {
-  display: table;
-  margin: 0 auto;
+.header #nav-toggle {
+  display: none !important;
 }
-.nav ul li {
+.header .nav {
+  clear: none;
+  display: block !important;
+  float: left;
+  padding: 0;
+  position: static !important;
+  margin-top: 28px;
+  width: auto;
+}
+.header .nav ul {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100) !important;
+  opacity: 1 !important;
+  margin: 0;
+}
+.header .nav ul li {
   float: left;
 }
-.nav ul li:before {
+.header .nav ul li:before {
   content: "/";
+  font-size: 20px;
+  font-size: 2rem;
 }
-.nav ul li:first-child:before {
+.header .nav ul li.what a, .header .nav ul li.garth a {
+  margin-left: 0;
+}
+.header .nav ul li.what:before, .header .nav ul li.garth:before {
   content: "";
 }
-.nav ul li a {
-  color: white;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 2.5;
+.header .nav ul li a {
+  color: #7f8381;
+  display: inline;
+  line-height: 1;
   margin: 0 12px;
   text-transform: uppercase;
 }
-
-.header {
-  height: 161px;
-  padding-top: 61px;
+.header .nav ul li a:hover {
+  text-decoration: none;
+  color: #c0c2c1;
 }
-.header .social {
-  top: 39px;
+.header .nav ul li.current a {
+  color: #404241;
+}
+.header .right {
+  float: right;
+  margin-top: 16px;
+}
+.header .right p span {
+  padding: 6px 14px 5px;
 }
 
 .panel .story {
@@ -1838,7 +1858,7 @@ ul.icons li [class*=" icon-"] {
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/garth.jpg', sizingMethod='scale')";
-  height: 800px;
+  height: 722px;
 }
 #garth .story {
   padding-top: 142px;
@@ -1849,8 +1869,14 @@ ul.icons li [class*=" icon-"] {
   margin-right: 1.69492%;
   display: inline;
 }
-#garth .copy .lead {
+#garth .copy h1 {
+  margin-bottom: .4em;
+}
+#garth .copy p {
   padding-right: 20%;
+}
+#garth .copy p.lead {
+  display: block;
 }
 
 #what hr {
@@ -1861,7 +1887,8 @@ ul.icons li [class*=" icon-"] {
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  margin-right: 16.94915%;
+  margin-left: 8.47458%;
+  margin-right: 8.47458%;
 }
 #what .copy.right {
   width: 49.15254%;
@@ -1871,36 +1898,41 @@ ul.icons li [class*=" icon-"] {
   display: inline;
 }
 
-#who .graphic {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-  margin-right: 8.47458%;
-}
 #who .copy {
   width: 57.62712%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
+  margin-left: 42.37288%;
+}
+#who .graphic {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  margin-left: -110.16949%;
 }
 
 #work hr.dotted {
   display: block;
 }
 #work ul {
-  width: 49.15254%;
+  width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
   padding-right: 2em;
 }
+#work ul.left {
+  margin-left: 8.47458%;
+}
 #work ul.right {
-  width: 49.15254%;
+  width: 40.67797%;
   float: right;
   margin-right: 0;
   #margin-left: -1em;
   display: inline;
+  margin-right: 8.47458%;
 }
 #work ul li:first-child {
   border: none;
@@ -1930,7 +1962,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 #contact {
-  background: #323232;
+  padding-bottom: 400px;
 }
 #contact .copy {
   width: 40.67797%;
@@ -1945,6 +1977,9 @@ ul.icons li [class*=" icon-"] {
   margin-right: 0;
   #margin-left: -1em;
   display: inline;
+}
+#contact .footer {
+  max-width: 1140px;
 }
 #contact .footer .col {
   width: 32.20339%;
@@ -1986,6 +2021,10 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* 62em =================================================== */
+.panel .story {
+  max-width: 1140px;
+}
+
 /* 86em =================================================== */
 #container {
   max-width: 1440px;

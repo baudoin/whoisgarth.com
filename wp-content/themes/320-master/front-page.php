@@ -1,12 +1,21 @@
 <?php get_header(); ?>
 			
-	<section id="garth" class="panel">
+	<section id="garth" class="panel shrunk" data-stellar-background-ratio="0.5">
 
 		<div class="story">
 
 			<div class="copy">
-				<h3>Hi, I'm Garth.</h3>
+				<h1>Hi, I'm Garth.</h1>
 				<p class="lead">I geek out on analytics, algorithm updates, link acquisitions, click through rates, and quality scores. I love coffee and high fives.</p>
+
+				<p><strong>What I do:</strong><br>
+					Online marketing, SEO,<br>
+					PPC &amp; social media</p>
+
+				<p>Simply put, I promote your business online.</p>
+
+				<a class="arrow-left" href="#contact"><strong>Let's Connect</strong></a>
+
 			</div>
 
 		</div>
@@ -14,7 +23,6 @@
 	</section> <!-- end #garth -->
 	
 	<section id="what" class="panel">
-		<div class="label"><h2>What I Do</h2></div>
 
 		<div class="story">
 
@@ -44,13 +52,9 @@
 	</section> <!-- end #what -->
 
 	<section id="who" class="panel">
-		<div class="label"><h2>Who Is Garth</h2></div>
 
 		<div class="story">
 
-			<div class="graphic">
-				<img src="<?php echo get_bloginfo('template_directory'); ?>/library/img/worms.png" alt="What Is Garth Graphic">
-			</div>
 			<div class="copy">
 				<p class="lead">What do Madonna, Cher, Sting, and Garth have in common?</p>
 
@@ -58,17 +62,19 @@
 
 				<p>I’ve been an entrepreneur since the age of 6, digging worms out of the yard and selling them as fishing worms to the corner market. Fast forward two decades, I’m creating and managing business online.  I’ve spent that last four years honing my online marketing skills and in the process created my own network of highly trafficked web properties. In the past year I’ve built an awesome team to scale operations so that I could bring similar success for my appreciative clients.</p>
 			</div>
+			<div class="graphic">
+				<img src="<?php echo get_bloginfo('template_directory'); ?>/library/img/worms.png" alt="What Is Garth Graphic">
+			</div>
 
 		</div>
 
 	</section> <!-- end #who -->
 
 	<section id="work" class="panel">
-		<div class="label"><h2>Who We Worked With</h2></div>
 
 		<div class="story">
 
-			<h3>Who We Worked With, Power In Numbers</h3>
+			<h3>Who We've Worked With, Power In Numbers</h3>
 
 			<hr class="dotted">
 
@@ -100,53 +106,23 @@
 
 	</section> <!-- end #work -->
 
-	<section id="together" class="panel">
-		<div class="label"><h2>Should we work together?</h2></div>
-
-		<div class="story">
-
-			<blockquote>
-				<span class="lead">“Garth,</span><br>
-				<span>I understand you only take on<br> 
-				a limited number of clients.</span>
-				 
-				<span>How do I know if we would be a<br>
-				good fit for your services?</span>
-
-				<span>Does it matter if I don’t like coffee?”</span>
-			</blockquote>
-
-			<ul class="left">
-				<li>Do you offer unique products or services?</li>
-				<li>Do you operate an amazing offline business but need help translating that awesomeness into the digital world?</li>
-				<li>Do you realize the online marketing is not a one time investment?</li>
-			</ul>
-
-			<ul class="right">
-				<li>Are you looking for long term growth as well as short-term gains?</li>
-				<li>Do you have a budget for online marketing and does the ROI make sense for your business?</li>
-				<li>What’s your favorite color?</li>
-			</ul>
-
-			<p class="outro">If you answered yes to all these questions and your favorite color is blue... chances are we could be a great match.</p>
-			<p class="outro">Get off your chair, step away from your computer and meet me for coffee.</p>
-
-		</div>
-
-	</section> <!-- end #together -->
-
 	<section id="contact" class="panel">
-		<div class="label"><h2>Contact</h2></div>
 
 		<div class="story">
 
 			<div class="copy">
 				<h3>Let's Make It Happen</h3>
 				<p>Lorem ipsum dolor sit amet. Por favor put in some stuff in here and all that. It’ll be great, need some content though.</p>
+
+				<ul class="social">
+					<li class="tw"><a href="#"><i class="icon-twitter"></i></a></li>
+					<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>
+					<li class="li"><a href="#"><i class="icon-linkedin-sign"></i></a></li>
+				</ul>
 			</div>
 
 			<div class="form-wrap">
-				<?php echo FrmEntriesController::show_form(x, $key = 'thxwgd', $title=false, $description=false); ?>
+				<?php echo FrmEntriesController::show_form(2, $key = 'thxwgd', $title=false, $description=false); ?>
 			</div>
 
 		</div>

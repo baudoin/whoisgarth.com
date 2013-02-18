@@ -21,6 +21,9 @@
 	<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+	<script type="text/javascript" src="//use.typekit.net/ouu4snh.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<!-- wordpress head functions -->
 	<?php wp_head(); ?>
@@ -38,27 +41,22 @@
 
 <body <?php body_class(); ?>>
 
-	<nav class="nav" role="navigation">
-
-		<ul class="clearfix">
-			<li><a href="#">What I Do</a></li>
-			<li><a href="#">Who Is Garth?</a></li>
-			<li><a href="#">Power In Numbers</a></li>
-			<li><a href="#">Should We Work Together?</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
-
-	</nav>
-
 	<header class="header" role="banner">
+		<div class="inner clearfix">
+			<div class="right">
+				<p>PH: <a href="tel:1-503-888-9051">503-888-9051</a> <span><a href="mailto:hello@whoisgarth.com"><i class="icon-envelope-alt"></i></a></span></p>
+			</div>	
+			<span id="nav-toggle"><i class="icon-reorder"></i></span>
+			<nav class="nav" role="navigation">
+				
+				<ul class="clearfix">
+					<li class="garth"><a href="#garth"></a></li>
+					<li class="what"><a href="#what">What I Do</a></li>
+					<li class="who"><a href="#who">Who Is Garth?</a></li>
+					<li class="work"><a href="#work">Power In Numbers</a></li>
+					<li class="contact"><a href="#contact">Contact Us</a></li>
+				</ul>
 
-		<ul class="social">
-			<li class="tw"><a href="#"><i class="icon-twitter"></i></a></li>
-			<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>
-			<li class="li"><a href="#"><i class="icon-linkedin-sign"></i></a></li>
-		</ul>
-			
-		<h1 id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Garth <span>Online Marketing, SEO, PPC &amp; Social Media</span></a></h1>
-		<p>Phone# 503-888-9051</p>
-	
+			</nav>
+		</div>
 	</header> <!-- end header -->
