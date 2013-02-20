@@ -360,10 +360,14 @@ sub {
 					&.contact a { color: #323232; }
 				}
 
-				&.what a:hover { color: #42ba90; }
-				&.who a:hover { color: #1e4393; }
-				&.work a:hover { color: #349946; }
-				&.contact a:hover { color: #323232; }
+				a:hover {
+					border-bottom: 1px dotted $garthgray;
+				}
+
+				&.what a:hover { color: #42ba90; border-color: #42ba90; }
+				&.who a:hover { color: #1e4393; border-color: #1e4393; }
+				&.work a:hover { color: #349946; border-color: #349946; }
+				&.contact a:hover { color: #323232; border-color: #323232; }
 
 				&.garth {
 					display: none !important;
@@ -394,6 +398,10 @@ sub {
 
 				a {
 					color: $garthgray;
+
+					&:hover {
+						border-bottom: 1px dotted $garthgray;
+					}
 				}
 
 				i {
@@ -534,19 +542,16 @@ sub {
 
 	.copy {
 
+		p {
+			@include font-size(16);
+		}
+
 		&.left {
 
-			p {
-				@include font-size(22);
-				line-height : $baselineheight; 
-			}
 		}
 
 		&.right {
 
-			p {
-				@include font-size(16);
-			}
 		}
 	}
 }
@@ -566,6 +571,7 @@ sub {
 
 		&.lead {
 			@include font-size(31);
+			font-weight: bold;
 			margin-bottom: 1em;
 		}
 	}
@@ -573,13 +579,12 @@ sub {
 
 
 #work {
-	background: #349946;
-	@include background-image(linear-gradient(#2A7F3B, #2F8940 20px, #359A4A 60px, #359A4A));
+	background: #f26621;
+	@include background-image(linear-gradient(#C54E25, #D85729 20px, #f26621 60px, #f26621));
 
 	h3 {
-		font-family: $altfont;
-		text-transform: uppercase;
 		text-align: center;
+		@include font-size(32);
 	}
 
 	hr.dotted {
@@ -595,8 +600,8 @@ sub {
 			padding: 16px 0;
 
 			p {
-				@include font-size(19);
-				line-height: 1em;
+				@include font-size(16);
+				line-height: 1.33em;
 				margin-bottom: 0;
 
 				&.title {
@@ -673,13 +678,11 @@ sub {
 
 	.copy {
 		h3	{
-			@include font-size(47);
-			font-family: $altfont;
-			margin-bottom: .2em;
-			text-transform: uppercase;
+			@include font-size(40);
+			margin-bottom: .6em;
 		}
 		p {
-			@include font-size(22);
+			@include font-size(20);
 			line-height: $baselineheight;
 		}
 	}
@@ -739,12 +742,11 @@ sub {
 		width: 90%;
 
 		.col {
-			font-family: "Helvetica Neue", arial, helvetica;
 			color: #fffef4;
 			margin-bottom: 20px;
 
 			p {
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 			}
 		}
 

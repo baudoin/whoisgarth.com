@@ -2122,17 +2122,24 @@ sub {
 .header .nav ul li.current.contact a {
   color: #323232;
 }
+.header .nav ul li a:hover {
+  border-bottom: 1px dotted #7f8381;
+}
 .header .nav ul li.what a:hover {
   color: #42ba90;
+  border-color: #42ba90;
 }
 .header .nav ul li.who a:hover {
   color: #1e4393;
+  border-color: #1e4393;
 }
 .header .nav ul li.work a:hover {
   color: #349946;
+  border-color: #349946;
 }
 .header .nav ul li.contact a:hover {
   color: #323232;
+  border-color: #323232;
 }
 .header .nav ul li.garth {
   display: none !important;
@@ -2159,6 +2166,9 @@ sub {
 }
 .header .right p span a {
   color: #7f8381;
+}
+.header .right p span a:hover {
+  border-bottom: 1px dotted #7f8381;
 }
 .header .right p span i {
   vertical-align: middle;
@@ -2298,12 +2308,7 @@ sub {
 #what hr {
   margin: 20px 0;
 }
-#what .copy.left p {
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 1.33em;
-}
-#what .copy.right p {
+#what .copy p {
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -2327,21 +2332,22 @@ sub {
 #who p.lead {
   font-size: 31px;
   font-size: 3.1rem;
+  font-weight: bold;
   margin-bottom: 1em;
 }
 
 #work {
-  background: #349946;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a7f3b), color-stop(20px, #2f8940), color-stop(60px, #359a4a), color-stop(100%, #359a4a));
-  background-image: -webkit-linear-gradient(#2a7f3b, #2f8940 20px, #359a4a 60px, #359a4a);
-  background-image: -moz-linear-gradient(#2a7f3b, #2f8940 20px, #359a4a 60px, #359a4a);
-  background-image: -o-linear-gradient(#2a7f3b, #2f8940 20px, #359a4a 60px, #359a4a);
-  background-image: linear-gradient(#2a7f3b, #2f8940 20px, #359a4a 60px, #359a4a);
+  background: #f26621;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c54e25), color-stop(20px, #d85729), color-stop(60px, #f26621), color-stop(100%, #f26621));
+  background-image: -webkit-linear-gradient(#c54e25, #d85729 20px, #f26621 60px, #f26621);
+  background-image: -moz-linear-gradient(#c54e25, #d85729 20px, #f26621 60px, #f26621);
+  background-image: -o-linear-gradient(#c54e25, #d85729 20px, #f26621 60px, #f26621);
+  background-image: linear-gradient(#c54e25, #d85729 20px, #f26621 60px, #f26621);
 }
 #work h3 {
-  font-family: "alternate-gothic-no-1-d", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-align: center;
+  font-size: 32px;
+  font-size: 3.2rem;
 }
 #work hr.dotted {
   display: none;
@@ -2355,9 +2361,9 @@ sub {
   padding: 16px 0;
 }
 #work ul li p {
-  font-size: 19px;
-  font-size: 1.9rem;
-  line-height: 1em;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.33em;
   margin-bottom: 0;
 }
 #work ul li p.title {
@@ -2431,15 +2437,13 @@ sub {
   background-image: linear-gradient(#272727, #2a2b2a 20px, #323232 60px, #323232);
 }
 #contact .copy h3 {
-  font-size: 47px;
-  font-size: 4.7rem;
-  font-family: "alternate-gothic-no-1-d", Helvetica, Arial, sans-serif;
-  margin-bottom: .2em;
-  text-transform: uppercase;
+  font-size: 40px;
+  font-size: 4rem;
+  margin-bottom: .6em;
 }
 #contact .copy p {
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.33em;
 }
 #contact .form-wrap .with_frm_style .frm_form_fields input,
@@ -2514,12 +2518,11 @@ sub {
   clear: both;
 }
 #contact .footer .col {
-  font-family: "Helvetica Neue", arial, helvetica;
   color: #fffef4;
   margin-bottom: 20px;
 }
 #contact .footer .col p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 #contact .footer .social {
   margin-bottom: 2px;
@@ -2726,16 +2729,21 @@ sub {
     display: block;
   }
 
+  #what .graphic img {
+    margin-left: -16%;
+  }
   #what hr {
     margin: 40px 0;
   }
+  #what .copy .lead {
+    font-size: 38px;
+    font-size: 3.8rem;
+  }
   #what .copy.left {
-    width: 32.20339%;
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    margin-left: 8.47458%;
-    margin-right: 8.47458%;
   }
   #what .copy.right {
     width: 49.15254%;
@@ -2753,15 +2761,19 @@ sub {
     margin-left: 42.37288%;
   }
   #who .graphic {
-    width: 49.15254%;
+    width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    margin-left: -110.16949%;
+    margin-left: -101.69492%;
   }
 
   #work hr.dotted {
     display: block;
+  }
+  #work h3 {
+    font-size: 36px;
+    font-size: 3.6rem;
   }
   #work ul {
     width: 40.67797%;
@@ -2809,7 +2821,7 @@ sub {
   }
 
   #contact {
-    padding-bottom: 200px;
+    padding-bottom: 140px;
   }
   #contact .copy {
     width: 40.67797%;
@@ -2852,8 +2864,8 @@ sub {
     display: inline;
   }
 
-  #contact {
-    padding-bottom: 300px;
+  #what .graphic img {
+    margin-left: -18%;
   }
 }
 @media only screen and (min-width: 62em) {
@@ -2880,7 +2892,19 @@ sub {
   }
 
   #contact {
-    padding-bottom: 400px;
+    padding-bottom: 200px;
+  }
+
+  #who .copy .lead {
+    font-size: 48px;
+    font-size: 4.8rem;
+    margin-bottom: .6em;
+  }
+
+  #work h3 {
+    font-size: 40px;
+    font-size: 4rem;
+    margin-bottom: .65em;
   }
 }
 @media only screen and (min-width: 86em) {

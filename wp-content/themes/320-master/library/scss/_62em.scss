@@ -49,5 +49,21 @@
 }
 
 #contact {
-	padding-bottom: 400px;
+	padding-bottom: 200px;
+}
+
+#who {
+	.copy {
+		.lead {
+			@include font-size(48);
+			margin-bottom: .6em;
+		}
+	}
+}
+
+#work {
+	h3 {
+		@include font-size(40);
+		margin-bottom: .65em;
+	}
 }

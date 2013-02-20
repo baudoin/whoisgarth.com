@@ -140,26 +140,25 @@ $total-columns  : 12;
 	}
 
 	.graphic {
+		img {
+			margin-left: -16%;
+		}
 	}
 
 	hr { margin: 40px 0; }
 
 	.copy {
 
-		&.left {
-			@include span-columns(4,12);
-			@include pre(1);
-			@include post(1); 
+		.lead {
+			@include font-size(38);
+		}
 
-			p {
-			}
+		&.left {
+			@include span-columns(6,12);
 		}
 
 		&.right {
 			@include span-columns(6 omega,12);
-
-			p {
-			}
 		}
 	}
 }
@@ -169,10 +168,14 @@ $total-columns  : 12;
 	.copy {
 		@include span-columns(7,12);
 		@include push(5);
+
+		.lead {
+
+		}
 	}
 	.graphic {
-		@include span-columns(6,12);
-		@include pull(13);
+		@include span-columns(4,12);
+		@include pull(12);
 	}
 }
 
@@ -180,6 +183,10 @@ $total-columns  : 12;
 
 	hr.dotted {
 		display: block;
+	}
+
+	h3 {
+		@include font-size(36);
 	}
 
 	ul {
@@ -227,7 +234,7 @@ $total-columns  : 12;
 }
 
 #contact {
-	padding-bottom: 200px;
+	padding-bottom: 140px;
 
 	.copy {
 		@include span-columns(5,12);

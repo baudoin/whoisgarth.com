@@ -1887,16 +1887,21 @@ ul.icons li [class*=" icon-"] {
   display: block;
 }
 
+#what .graphic img {
+  margin-left: -16%;
+}
 #what hr {
   margin: 40px 0;
 }
+#what .copy .lead {
+  font-size: 38px;
+  font-size: 3.8rem;
+}
 #what .copy.left {
-  width: 32.20339%;
+  width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  margin-left: 8.47458%;
-  margin-right: 8.47458%;
 }
 #what .copy.right {
   width: 49.15254%;
@@ -1914,15 +1919,19 @@ ul.icons li [class*=" icon-"] {
   margin-left: 42.37288%;
 }
 #who .graphic {
-  width: 49.15254%;
+  width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  margin-left: -110.16949%;
+  margin-left: -101.69492%;
 }
 
 #work hr.dotted {
   display: block;
+}
+#work h3 {
+  font-size: 36px;
+  font-size: 3.6rem;
 }
 #work ul {
   width: 40.67797%;
@@ -1970,7 +1979,7 @@ ul.icons li [class*=" icon-"] {
 }
 
 #contact {
-  padding-bottom: 200px;
+  padding-bottom: 140px;
 }
 #contact .copy {
   width: 40.67797%;
@@ -2012,8 +2021,8 @@ ul.icons li [class*=" icon-"] {
   display: inline;
 }
 
-#contact {
-  padding-bottom: 300px;
+#what .graphic img {
+  margin-left: -18%;
 }
 
 /* 62em =================================================== */
@@ -2039,7 +2048,19 @@ ul.icons li [class*=" icon-"] {
 }
 
 #contact {
-  padding-bottom: 400px;
+  padding-bottom: 200px;
+}
+
+#who .copy .lead {
+  font-size: 48px;
+  font-size: 4.8rem;
+  margin-bottom: .6em;
+}
+
+#work h3 {
+  font-size: 40px;
+  font-size: 4rem;
+  margin-bottom: .65em;
 }
 
 /* 86em =================================================== */

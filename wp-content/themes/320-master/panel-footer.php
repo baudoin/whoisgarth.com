@@ -1,13 +1,11 @@
 <footer class="footer" role="contentinfo">
 
 		<div class="col">
-			<p>539 Northwest 13th Avenue #B1<br>
-			Portland, OR 97209</p>
+			<p><?php the_field('footer_address', 'option'); ?></p>
 		</div>
 
 		<div class="col">
-			<p>503 942 9489<br>
-			HELLO [AT] WHOISGARTH.COM</p>
+			<p><?php the_field('footer_contact', 'option'); ?></p>
 		</div>
 		
 		<div class="col">
@@ -16,7 +14,7 @@
 				<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>
 				<li class="li"><a href="#"><i class="icon-linkedin-sign"></i></a></li>
 			</ul>
-			<p>© WHOISGARTH LLC, <?php echo date('Y') ?></p>
+			<p>© <?php the_field('copyright', 'option'); ?>, <?php echo date('Y') ?></p>
 		</div>
 	
 </footer> <!-- end footer -->

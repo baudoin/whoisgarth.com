@@ -44,7 +44,7 @@
 	<header class="header" role="banner">
 		<div class="inner clearfix">
 			<div class="right">
-				<p>PH: <a href="tel:1-503-888-9051">503-888-9051</a> <span><a href="mailto:hello@whoisgarth.com"><i class="icon-envelope-alt"></i></a></span></p>
+				<p>PH: <a href="tel:1-<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a> <span><a href="mailto:<?php the_field('email_address', 'option'); ?>"><i class="icon-envelope-alt"></i></a></span></p>
 			</div>	
 			<span id="nav-toggle"><i class="icon-reorder"></i></span>
 			<nav class="nav" role="navigation">
