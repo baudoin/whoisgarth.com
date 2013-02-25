@@ -1835,7 +1835,7 @@ ul.icons li [class*=" icon-"] {
 }
 .header .nav ul li a {
   color: #7f8381;
-  display: inline;
+  display: inline-block;
   line-height: 1;
   margin: 0 12px;
   text-transform: uppercase;
@@ -1843,6 +1843,18 @@ ul.icons li [class*=" icon-"] {
 .header .nav ul li a:hover {
   text-decoration: none;
   color: #c0c2c1;
+}
+.header .nav ul li.what a:hover {
+  border-bottom: 1px dotted #42ba90;
+}
+.header .nav ul li.who a:hover {
+  border-bottom: 1px dotted #1e4393;
+}
+.header .nav ul li.work a:hover {
+  border-bottom: 1px dotted #f26621;
+}
+.header .nav ul li.contact a:hover {
+  border-bottom: 1px dotted #323232;
 }
 .header .nav ul li.current a {
   color: #404241;
@@ -1912,18 +1924,18 @@ ul.icons li [class*=" icon-"] {
 }
 
 #who .copy {
-  width: 57.62712%;
+  width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  margin-left: 42.37288%;
+  margin-left: 50.84746%;
 }
 #who .graphic {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
-  margin-left: -101.69492%;
+  margin-left: -93.22034%;
 }
 
 #work hr.dotted {
@@ -1999,18 +2011,10 @@ ul.icons li [class*=" icon-"] {
   max-width: 1140px;
 }
 #contact .footer .col {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
   margin-bottom: 0;
 }
-#contact .footer .col:last-child {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
+#contact .footer .col p {
+  margin-bottom: .2em;
 }
 
 /* 48em =================================================== */

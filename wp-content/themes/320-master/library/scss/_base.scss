@@ -325,13 +325,14 @@ sub {
 		left: 0;
 		background: white;
 		padding: 5px 0 14px 16px;
+		overflow: visible !important;
 		z-index: 99;
 
 		ul {
 			margin: 0;
 			@include opacity(0);
 			@include transition-property(opacity);
-			@include transition-duration(.5s);
+			@include transition-duration(.25s);
 			@include transition-timing-function(ease-in);
 
 			&.show {
@@ -347,27 +348,23 @@ sub {
 					margin: 0 12px 10px;
 					display: block;
 					text-transform: uppercase;
-
-					&:hover {
-						border-bottom: none;
-					}
 				}
 
 				&.current {
 					&.what a { color: #42ba90; }
 					&.who a { color: #1e4393; }
-					&.work a { color: #349946; }
+					&.work a { color: #f26621; }
 					&.contact a { color: #323232; }
 				}
 
 				a:hover {
-					border-bottom: 1px dotted $garthgray;
+					border-bottom: none;
 				}
 
-				&.what a:hover { color: #42ba90; border-color: #42ba90; }
-				&.who a:hover { color: #1e4393; border-color: #1e4393; }
-				&.work a:hover { color: #349946; border-color: #349946; }
-				&.contact a:hover { color: #323232; border-color: #323232; }
+				&.what a:hover { color: #42ba90; }
+				&.who a:hover { color: #1e4393; }
+				&.work a:hover { color: #f26621; }
+				&.contact a:hover { color: #323232; }
 
 				&.garth {
 					display: none !important;
@@ -446,7 +443,7 @@ sub {
 .panel {
 	position: relative;
 	width: 100%;
-	z-index: 1;
+	//z-index: 1;
 
 	.label {
 		border-right: 1px solid $white;
@@ -693,6 +690,11 @@ sub {
 
 		.with_frm_style {
 
+			.frm_required {
+				color: #f26621;
+				font-weight: bold;
+			}
+
 			.frm_form_fields input, 
 			#wpcontent .frm_form_fields select, 
 			.frm_form_fields select, 
@@ -747,11 +749,14 @@ sub {
 
 			p {
 				font-size: 1.3rem;
+				margin-bottom: .2em;
 			}
 		}
 
 		.social {
+			float: left;
 			margin-bottom: 2px;
+			margin-right: 14px;
 
 			li {
 				float: left;

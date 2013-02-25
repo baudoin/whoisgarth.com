@@ -2,13 +2,7 @@
 
 		<div class="col">
 			<p><?php the_field('footer_address', 'option'); ?></p>
-		</div>
-
-		<div class="col">
 			<p><?php the_field('footer_contact', 'option'); ?></p>
-		</div>
-		
-		<div class="col">
 			<ul class="social clearfix">
 				<li class="tw"><a href="#"><i class="icon-twitter"></i></a></li>
 				<li class="fb"><a href="#"><i class="icon-facebook"></i></a></li>

@@ -54,7 +54,7 @@
 					<li class="what"><a href="#what">What I Do</a></li>
 					<li class="who"><a href="#who">Who Is Garth?</a></li>
 					<li class="work"><a href="#work">Power In Numbers</a></li>
-					<li class="contact"><a href="#contact">Contact Us</a></li>
+					<li class="contact"><a href="#contact">Let's Connect</a></li>
 				</ul>
 
 			</nav>

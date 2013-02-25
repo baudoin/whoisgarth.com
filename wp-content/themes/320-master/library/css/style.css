@@ -2075,6 +2075,7 @@ sub {
   left: 0;
   background: white;
   padding: 5px 0 14px 16px;
+  overflow: visible !important;
   z-index: 99;
 }
 .header .nav ul {
@@ -2085,10 +2086,10 @@ sub {
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
@@ -2107,9 +2108,6 @@ sub {
   display: block;
   text-transform: uppercase;
 }
-.header .nav ul li a:hover {
-  border-bottom: none;
-}
 .header .nav ul li.current.what a {
   color: #42ba90;
 }
@@ -2117,29 +2115,25 @@ sub {
   color: #1e4393;
 }
 .header .nav ul li.current.work a {
-  color: #349946;
+  color: #f26621;
 }
 .header .nav ul li.current.contact a {
   color: #323232;
 }
 .header .nav ul li a:hover {
-  border-bottom: 1px dotted #7f8381;
+  border-bottom: none;
 }
 .header .nav ul li.what a:hover {
   color: #42ba90;
-  border-color: #42ba90;
 }
 .header .nav ul li.who a:hover {
   color: #1e4393;
-  border-color: #1e4393;
 }
 .header .nav ul li.work a:hover {
-  color: #349946;
-  border-color: #349946;
+  color: #f26621;
 }
 .header .nav ul li.contact a:hover {
   color: #323232;
-  border-color: #323232;
 }
 .header .nav ul li.garth {
   display: none !important;
@@ -2206,7 +2200,6 @@ sub {
 .panel {
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 .panel .label {
   border-right: 1px solid white;
@@ -2446,6 +2439,10 @@ sub {
   font-size: 2rem;
   line-height: 1.33em;
 }
+#contact .form-wrap .with_frm_style .frm_required {
+  color: #f26621;
+  font-weight: bold;
+}
 #contact .form-wrap .with_frm_style .frm_form_fields input,
 #contact .form-wrap .with_frm_style #wpcontent .frm_form_fields select,
 #contact .form-wrap .with_frm_style .frm_form_fields select,
@@ -2523,9 +2520,12 @@ sub {
 }
 #contact .footer .col p {
   font-size: 1.3rem;
+  margin-bottom: .2em;
 }
 #contact .footer .social {
+  float: left;
   margin-bottom: 2px;
+  margin-right: 14px;
 }
 #contact .footer .social li {
   float: left;
@@ -2677,7 +2677,7 @@ sub {
   }
   .header .nav ul li a {
     color: #7f8381;
-    display: inline;
+    display: inline-block;
     line-height: 1;
     margin: 0 12px;
     text-transform: uppercase;
@@ -2685,6 +2685,18 @@ sub {
   .header .nav ul li a:hover {
     text-decoration: none;
     color: #c0c2c1;
+  }
+  .header .nav ul li.what a:hover {
+    border-bottom: 1px dotted #42ba90;
+  }
+  .header .nav ul li.who a:hover {
+    border-bottom: 1px dotted #1e4393;
+  }
+  .header .nav ul li.work a:hover {
+    border-bottom: 1px dotted #f26621;
+  }
+  .header .nav ul li.contact a:hover {
+    border-bottom: 1px dotted #323232;
   }
   .header .nav ul li.current a {
     color: #404241;
@@ -2754,18 +2766,18 @@ sub {
   }
 
   #who .copy {
-    width: 57.62712%;
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    margin-left: 42.37288%;
+    margin-left: 50.84746%;
   }
   #who .graphic {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
-    margin-left: -101.69492%;
+    margin-left: -93.22034%;
   }
 
   #work hr.dotted {
@@ -2841,18 +2853,10 @@ sub {
     max-width: 1140px;
   }
   #contact .footer .col {
-    width: 32.20339%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
     margin-bottom: 0;
   }
-  #contact .footer .col:last-child {
-    width: 32.20339%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
+  #contact .footer .col p {
+    margin-bottom: .2em;
   }
 }
 @media only screen and (min-width: 48em) {

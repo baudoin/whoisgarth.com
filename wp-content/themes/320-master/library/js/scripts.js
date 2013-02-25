@@ -1,3 +1,38 @@
+/*! Normalized address bar hiding for iOS & Android (c) @scottjehl MIT License */
+(function( win ){
+  var doc = win.document;
+
+  // If there's a hash, or addEventListener is undefined, stop here
+  if( !location.hash && win.addEventListener ){
+
+    //scroll to 1
+    win.scrollTo( 0, 1 );
+    var scrollTop = 1,
+      getScrollTop = function(){
+        return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+      },
+
+      //reset to 0 on bodyready, if needed
+      bodycheck = setInterval(function(){
+        if( doc.body ){
+          clearInterval( bodycheck );
+          scrollTop = getScrollTop();
+          win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+        } 
+      }, 15 );
+
+    win.addEventListener( "load", function(){
+      setTimeout(function(){
+        //at load, if user hasn't scrolled more than 20 or so...
+        if( getScrollTop() < 20 ){
+          //reset to hide addr bar at onload
+          win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+        }
+      }, 0);
+    }, false );
+  }
+})( this );
+
 ;(function ($, window, undefined) {
   'use strict';
 
@@ -13,25 +48,13 @@
       horizontalScrolling: false,
       responsive: true
     });
-
-    // Check for iOS and change
-    var deviceAgent = navigator.userAgent.toLowerCase();
-    var agentID = deviceAgent.match(/(iPad|iPhone|iPod)/i);
-
-    var $navJsOffset;
-
-    if (agentID) {
-      var $navJsOffset = 0;
-    } else {
-      var $navJsOffset = 60;
-    }
     
 
     $('.nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,
-        scrollOffset: $navJsOffset,
+        scrollOffset: 60,
         filter: '',
         easing: 'easeInOutCirc',
         begin: function() {
@@ -81,23 +104,10 @@
     });
 
     $('nav li > a').on('click', function(){
-      $('nav').slideUp(function(){
-        $('ul',this).toggleClass('show');
-      });
+      $('nav ul').toggleClass('show');
+      $('nav').slideUp();
     });
     
   });
-
-  // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
-  if (Modernizr.touch && !window.location.hash) {
-    $(window).load(function () {
-      setTimeout(function () {
-        // At load, if user hasn't scrolled more than 20px or so...
-  			if( $(window).scrollTop() < 20 ) {
-          window.scrollTo(0, 1);
-        }
-      }, 0);
-    });
-  }
 
 })(jQuery, this);

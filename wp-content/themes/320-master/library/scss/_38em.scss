@@ -62,7 +62,7 @@ $total-columns  : 12;
 
 				a {
 					color: $garthgray;
-					display: inline;
+					display: inline-block;
 					line-height: 1;
 					margin: 0 12px;
 					text-transform: uppercase;
@@ -72,6 +72,11 @@ $total-columns  : 12;
 						color: lighten($garthgray, 25%);
 					}
 				}
+
+				&.what a:hover { border-bottom: 1px dotted #42ba90; }
+				&.who a:hover { border-bottom: 1px dotted #1e4393; }
+				&.work a:hover { border-bottom: 1px dotted #f26621; }
+				&.contact a:hover { border-bottom: 1px dotted #323232; }
 
 				&.current {
 					a {
@@ -166,8 +171,8 @@ $total-columns  : 12;
 #who {
 
 	.copy {
-		@include span-columns(7,12);
-		@include push(5);
+		@include span-columns(6,12);
+		@include push(6);
 
 		.lead {
 
@@ -175,7 +180,7 @@ $total-columns  : 12;
 	}
 	.graphic {
 		@include span-columns(4,12);
-		@include pull(12);
+		@include pull(11);
 	}
 }
 
@@ -249,11 +254,15 @@ $total-columns  : 12;
 		max-width: 1140px;
 
 		.col {
-			@include span-columns(4,12);
+			//@include span-columns(4,12);
 			margin-bottom: 0;
 
+			p {
+				margin-bottom: .2em;
+			}
+
 			&:last-child {
-				@include span-columns(4 omega,12);
+				//@include span-columns(4 omega,12);
 			}
 		}
 	}
