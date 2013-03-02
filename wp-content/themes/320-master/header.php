@@ -51,10 +51,10 @@
 				
 				<ul class="clearfix">
 					<li class="garth"><a href="#garth"></a></li>
-					<li class="what"><a href="#what">What I Do</a></li>
-					<li class="who"><a href="#who">Who Is Garth?</a></li>
-					<li class="work"><a href="#work">Power In Numbers</a></li>
-					<li class="contact"><a href="#contact">Let's Connect</a></li>
+					<li class="what"><a href="#what"><?php the_field('nav_link_one', 'option'); ?></a></li>
+					<li class="who"><a href="#who"><?php the_field('nav_link_two', 'option'); ?></a></li>
+					<li class="work"><a href="#work"><?php the_field('nav_link_three', 'option'); ?></a></li>
+					<li class="contact"><a href="#contact"><?php the_field('nav_link_four', 'option'); ?></a></li>
 				</ul>
 
 			</nav>
