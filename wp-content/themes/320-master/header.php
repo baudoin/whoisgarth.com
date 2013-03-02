@@ -30,7 +30,7 @@
 	<!-- end of wordpress head -->
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script src="js/selectivizr.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/library/js/selectivizr.min.js"></script>
 	<![endif]-->
 		
 	<!-- drop Google Analytics Here -->

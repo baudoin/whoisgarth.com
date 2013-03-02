@@ -1785,8 +1785,7 @@ ul.icons li [class*=" icon-"] {
 html {
   background: white;
   font-size: 62.5%;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: white;
+  -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -2009,6 +2008,10 @@ sub {
   bottom: -0.25em;
 }
 
+br {
+  display: none;
+}
+
 .header {
   background: white;
   color: #7f8381;
@@ -2075,7 +2078,7 @@ sub {
   left: 0;
   background: white;
   padding: 5px 0 14px 16px;
-  overflow: visible !important;
+  overflow: hidden;
   z-index: 99;
 }
 .header .nav ul {
@@ -2090,6 +2093,10 @@ sub {
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
   -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
@@ -2200,6 +2207,9 @@ sub {
 .panel {
   position: relative;
   width: 100%;
+}
+.panel .to-top {
+  display: none;
 }
 .panel .label {
   border-right: 1px solid white;
@@ -2522,16 +2532,36 @@ sub {
   font-size: 1.3rem;
   margin-bottom: .2em;
 }
+#contact .footer .col p br {
+  display: block;
+}
 #contact .footer .social {
-  float: left;
   margin-bottom: 2px;
-  margin-right: 14px;
+  padding-top: 6px;
 }
 #contact .footer .social li {
   float: left;
   margin-right: 6px;
 }
 
+.touch .panel .to-top {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  color: black;
+  display: block;
+  font-size: 28px;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 36px;
+}
+.touch .panel .to-top:hover {
+  border: none !important;
+}
+.touch .header {
+  position: relative !important;
+}
 .touch #garth {
   background-position: 60% 25% !important;
   background-attachment: scroll !important;
@@ -2874,6 +2904,10 @@ sub {
 }
 @media only screen and (min-width: 62em) {
   /* 62em =================================================== */
+  br {
+    display: block;
+  }
+
   #garth {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2900,8 +2934,8 @@ sub {
   }
 
   #who .copy .lead {
-    font-size: 48px;
-    font-size: 4.8rem;
+    font-size: 36px;
+    font-size: 3.6rem;
     margin-bottom: .6em;
   }
 

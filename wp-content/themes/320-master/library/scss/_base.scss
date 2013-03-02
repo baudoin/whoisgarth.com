@@ -39,15 +39,13 @@ $container-style: fluid;
 html {
 	background : $bodycolor;
 	font-size : 62.5%;
-	-webkit-overflow-scrolling : touch;
-	-webkit-tap-highlight-color : lighten($basecolor, 75%);
+	-webkit-tap-highlight-color : transparent;
 	-webkit-text-size-adjust : 100%;
 	-ms-text-size-adjust : 100%;
 }
 
 body {
 	@include font-size();
-
 	background-color : transparent;
 	font-family : $basefont;
 	line-height : $baselineheight;
@@ -263,6 +261,10 @@ sub {
 	bottom : -0.25em; 
 }
 
+br {
+	display: none;
+}
+
 
 // GENERAL	 			=====================================
 
@@ -325,7 +327,7 @@ sub {
 		left: 0;
 		background: white;
 		padding: 5px 0 14px 16px;
-		overflow: visible !important;
+		overflow: hidden;
 		z-index: 99;
 
 		ul {
@@ -333,6 +335,7 @@ sub {
 			@include opacity(0);
 			@include transition-property(opacity);
 			@include transition-duration(.25s);
+			@include transition-delay(.25s);
 			@include transition-timing-function(ease-in);
 
 			&.show {
@@ -444,6 +447,10 @@ sub {
 	position: relative;
 	width: 100%;
 	//z-index: 1;
+
+	.to-top {
+		display: none;
+	}
 
 	.label {
 		border-right: 1px solid $white;
@@ -750,13 +757,16 @@ sub {
 			p {
 				font-size: 1.3rem;
 				margin-bottom: .2em;
+
+				br {
+					display: block;
+				}
 			}
 		}
 
 		.social {
-			float: left;
 			margin-bottom: 2px;
-			margin-right: 14px;
+			padding-top: 6px;
 
 			li {
 				float: left;
@@ -770,6 +780,27 @@ sub {
 // Modernizr Specific 
 
 .touch {
+
+	.panel {
+		.to-top {
+			@include opacity(.2);
+			color: $black;
+			display: block;
+			@include font-size(28);
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			height: 36px;
+
+			&:hover {
+				border: none !important;
+			}
+		}
+	}
+
+	.header {
+		position: relative !important;
+	}
 
 	// do not allow parrallax on iOS, Android and touch devices
 

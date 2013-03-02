@@ -2030,6 +2030,10 @@ ul.icons li [class*=" icon-"] {
 }
 
 /* 62em =================================================== */
+br {
+  display: block;
+}
+
 #garth {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2056,8 +2060,8 @@ ul.icons li [class*=" icon-"] {
 }
 
 #who .copy .lead {
-  font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 36px;
+  font-size: 3.6rem;
   margin-bottom: .6em;
 }
 

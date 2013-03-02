@@ -9,6 +9,11 @@
 
 /* 62em =================================================== */
 
+br {
+	display: block;
+}
+
+
 // GRID 				=====================================
 
 
@@ -55,7 +60,7 @@
 #who {
 	.copy {
 		.lead {
-			@include font-size(48);
+			@include font-size(36);
 			margin-bottom: .6em;
 		}
 	}

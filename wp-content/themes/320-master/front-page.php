@@ -26,6 +26,10 @@
 	
 	<section id="what" class="panel">
 
+		<span class="to-top">
+			<i class="icon-angle-up"></i>
+		</span>
+
 		<div class="story">
 
 			<?php if(get_field('what_block')): ?>
@@ -56,6 +60,10 @@
 
 	<section id="who" class="panel">
 
+		<span class="to-top">
+			<i class="icon-angle-up"></i>
+		</span>
+
 		<div class="story">
 
 			<?php if(get_field('who_block')): ?>
@@ -80,6 +88,10 @@
 	</section> <!-- end #who -->
 
 	<section id="work" class="panel">
+
+		<span class="to-top">
+			<i class="icon-angle-up"></i>
+		</span>
 
 		<div class="story">
 
@@ -124,6 +136,10 @@
 	</section> <!-- end #work -->
 
 	<section id="contact" class="panel">
+
+		<span class="to-top">
+			<i class="icon-angle-up"></i>
+		</span>
 
 		<div class="story">
 
